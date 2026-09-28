@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -18,7 +19,8 @@
         <a href="#experience">Experience</a> |
         <a href="#skills">Skills</a> |
         <a href="#project">Project</a> |
-        <a href="#youtube">YouTube</a>
+        <a href="#youtube">YouTube</a> |
+        <a href="#contact">Contact</a>
     </p>
     <hr>
     <!-- This is the introduction heading-->
@@ -96,10 +98,46 @@
     <!-- This is the Youtube heading-->
 
     <h3 id="youtube">YouTube</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=41r2NHXLhF1F_VSk&amp;start=4"
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TQvXEza4fPc?si=yQWoortI8Ln7tErQ"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <hr>
+    <!-- This is the Contact form-->
+
+    <h3 id="contact">Contact</h3>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label>Gender</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="role">Role</label>
+            <select id="role" name="role">
+                <option value="ceo">CEO</option>
+                <option value="manager">Manager</option>
+                <option value="developer">Developer</option>
+                <option value="intern">Intern</option>
+            </select>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 
 </html>

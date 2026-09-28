@@ -1,0 +1,248 @@
+html {
+    background-color: #dfe6ec;
+    overflow-y: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333333;
+    margin: 20px auto;
+    padding: 0;
+    max-width: 1100px;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ---------- Header ---------- */
+h1,
+h2,
+p:first-of-type {
+    text-align: center;
+    background-color: #2c3e50;
+    color: #ffffff;
+    margin: 0;
+    padding: 10px;
+}
+
+h1 {
+    padding-top: 30px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+p:first-of-type {
+    padding-bottom: 25px;
+}
+
+p:first-of-type a {
+    text-decoration: none;
+    color: #4dacff;
+    font-size: 18px;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+p:first-of-type a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+
+/* ---------- Introduction ---------- */
+#introduction {
+    text-align: left;
+    font-weight: bold;
+    padding: 0 5%;
+}
+
+h3#introduction+p {
+    text-align: justify;
+    padding: 0 5%;
+    line-height: 1.6;
+}
+
+
+/* ---------- Image ---------- */
+figure {
+    text-align: center;
+    margin: 30px auto;
+}
+
+img {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-style: italic;
+    color: #555555;
+    margin-top: 10px;
+}
+
+
+/* ---------- Section headings ---------- */
+#experience,
+#skills,
+#project,
+#youtube,
+#contact {
+    padding-left: 5%;
+}
+
+
+/* ---------- Experience ---------- */
+ol {
+    padding: 0 5% 0 8%;
+    line-height: 1.8;
+}
+
+ol li:nth-child(odd) {
+    font-weight: lighter;
+}
+
+ol li:nth-child(even) {
+    font-weight: bold;
+}
+
+
+/* ---------- Skills table ---------- */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border: none;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 12px 20px;
+    text-align: left;
+    border: 1px solid #dddddd;
+}
+
+th {
+    background-color: #34495e;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+/* ---------- Project cards ---------- */
+ul {
+    list-style: none;
+    margin: 20px auto;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+ul li {
+    background-color: #ffffff;
+    border-left: 6px solid #3498db;
+    border-radius: 12px;
+    padding: 25px 20px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+ul li:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+
+/* ---------- YouTube ---------- */
+iframe {
+    display: block;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 560px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ---------- Contact form ---------- */
+form {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto 40px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+.radio-group label {
+    font-weight: normal;
+    display: inline;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #dddddd;
+    margin: 40px 5%;
+}
